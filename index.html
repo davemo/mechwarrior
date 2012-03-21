@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>MechWarrior 3.0</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+</head>
+<body>  
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">MechWarrior 3.0 Unit Builder</a>
+      </div>
+    </div><!-- /navbar-inner -->
+  </div>
+  
+  <div class="container">
+    
+    <div class="row">
+      <div class="span2">
+        <div class="well" style="padding: 8px 0;">
+          <ul class="nav nav-list">
+            <li class="nav-header">Create</li>
+            <li class="active"><a href="#"><i class="icon-white icon-cog"></i> Mech</a></li>
+            <li><a href="#"><i class="icon-road"></i> Vehicle</a></li>
+            <li><a href="#"><i class="icon-plane"></i> Battle Armor</a></li>
+            <li><a href="#"><i class="icon-user"></i> Infantry</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="icon-question-sign"></i> About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="span5">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Create Mech</legend>
+            <div class="control-group">
+              <label class="control-label" for="select-faction">Faction</label>
+              <div class="controls">
+                <select id="select-faction" class="input-medium">
+                  <option value="inner-sphere">Inner Sphere</option>
+                  <option value="clan">Clan</option>
+                </select>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="select-class">Class</label>
+              <div class="controls">
+                <select id="select-class" class="input-medium">
+                  <option value="light">Light</option>
+                  <option value="medium">Medium</option>
+                  <option value="heavy">Heavy</option>
+                  <option value="assault">Assault</option>
+                  <option value="clan">Clan</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Create</button>
+              <button class="btn">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="span5">
+        <fieldset>
+          <legend>Unit Preview</legend>
+        </fieldset>
+        <br />
+        <div class="well">
+          <p>The intent for this area is to show a live preview of the unit, including points, as you change form options.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/libs.js"></script>
+</body>
+</html>
