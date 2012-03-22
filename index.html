@@ -11,72 +11,235 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </a>
         <a class="brand" href="#">MechWarrior 3.0 Unit Builder</a>
+        
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="#"><i class="icon-white icon-cog"></i> Mech</a></li>
+            <li><a href="#"><i class="icon-white icon-road"></i> Vehicle</a></li>
+            <li><a href="#"><i class="icon-white icon-plane"></i> Battle Armor</a></li>
+            <li><a href="#"><i class="icon-white icon-user"></i> Infantry</a></li>
+          </ul>
+        </div>
+        
       </div>
     </div><!-- /navbar-inner -->
   </div>
   
   <div class="container">
-    
+    <h1>Create Mech</h1>
+    <hr />
     <div class="row">
-      <div class="span2">
-        <div class="well" style="padding: 8px 0;">
-          <ul class="nav nav-list">
-            <li class="nav-header">Create</li>
-            <li class="active"><a href="#"><i class="icon-white icon-cog"></i> Mech</a></li>
-            <li><a href="#"><i class="icon-road"></i> Vehicle</a></li>
-            <li><a href="#"><i class="icon-plane"></i> Battle Armor</a></li>
-            <li><a href="#"><i class="icon-user"></i> Infantry</a></li>
-            <li class="divider"></li>
-            <li><a href="#"><i class="icon-question-sign"></i> About</a></li>
-          </ul>
+      <div class="span7">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#basics" data-toggle="tab">Basics</a></li>
+          <li><a href="#special-equipment" data-toggle="tab">Special Equipment</a></li>
+          <li><a href="#weapons" data-toggle="tab">Weapons</a></li>
+          <li><a href="#extras" data-toggle="tab">Extras</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="basics">
+            <form class="form-horizontal">
+              <fieldset>
+                <div class="control-group">
+                  <label class="control-label" for="input-name">Mech Name:</label>
+                  <div class="controls">
+                    <input id="input-name" type="text" class="input-large" />
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="input-variant">Variant Number:</label>
+                  <div class="controls">
+                    <input id="input-variant" type="text" class="input-large" />
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="input-designer">Designer:</label>
+                  <div class="controls">
+                    <input id="input-designer" type="text" class="input-large" />
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="select-faction">Faction</label>
+                  <div class="controls">
+                    <select id="select-faction" class="input-medium">
+                      <option value="inner-sphere">Inner Sphere</option>
+                      <option value="clan">Clan</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="select-class">Class</label>
+                  <div class="controls">
+                    <select id="select-class" class="input-medium">
+                      <option value="ul">Ultra-Light</option>
+                      <option value="l">Light</option>
+                      <option value="m">Medium</option>
+                      <option value="h">Heavy</option>
+                      <option value="a">Assault</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="select-chassis">Chassis</label>
+                  <div class="controls">
+                    <select id="select-chassis" class="input-medium">
+                      <option value="mech">Mech</option>
+                      <option value="quad">Quad Mech</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="select-chassis">Rank</label>
+                  <div class="controls">
+                    <select id="select-rank" class="input-medium">
+                      <option value="green">Green</option>
+                      <option value="regular">Regular</option>
+                      <option value="veteran">Veteran</option>                  
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="select-speed">Walk Speed</label>
+                  <div class="controls">
+                    <select id="select-speed" class="input-medium">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="select-engine">Engine</label>
+                  <div class="controls">
+                    <select id="select-engine" class="input-medium">
+                      <option value="el">Extra Light</option>
+                      <option value="f">Fusion</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="check-endosteel">Endo Steel</label>
+                  <div class="controls">
+                    <input type="checkbox" id="check-endosteel" />
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="tab-pane" id="special-equipment">
+             <form class="form-horizontal">
+                <fieldset>
+                  <div class="control-group">
+                    <label class="control-label" for="select-sensors">Sensors:</label>
+                    <div class="controls">
+                      <select id="select-sensors" class="input-large">
+                        <option value="">Select One</option>
+                        <option value="watchdog">Watchdog e-warfare System</option>
+                        <option value="beap">Beagle Active Probe</option>
+                        <option value="blap">Bloodhound Active Probe</option>
+                        <option value="tc">Targeting Computer</option>
+                        <option value="it">Improved Tracking</option>
+                        <option value="ei">Enhanced Imaging</option>
+                        <option value="tag">Target Acquisition Gear (TAG)</option>
+                        <option value="afcs">Artemis Fire Control System</option>
+                        <option value="aatarg">AA Targeting</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="select-defence">Defence:</label>
+                    <div class="controls">
+                      <select id="select-defence" class="input-large">
+                        <option value="">Select One</option>
+                        <option value="watchdog">Watchdog e-warfare System</option>
+                        <option value="camo">Camouflage</option>
+                        <option value="ecamo">Electronic Camouflage</option>
+                        <option value="ecm">ECM Suite</option>
+                        <option value="gecm">Guardian ECM Suite</option>
+                        <option value="aecm">Angel ECM Suite</option>
+                        <option value="eccm">ECCM Suite</option>
+                        <option value="vdj">Viral Decoy Jammer</option>
+                        <option value="ams">Anti Missile System (AMS)</option>
+                        <option value="aams">Advanced AMS (AAMS)</option>
+                        <option value="decoy">Decoy</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="select-speed">Speed:</label>
+                    <div class="controls">
+                      <select id="select-speed" class="input-large">
+                        <option value="">Select One</option>
+                        <option value="jj">Jump Jets</option>
+                        <option value="ijj">Improved Jump Jets</option>
+                        <option value="tsm">Triple Strength Myomer</option>
+                        <option value="itsm">Improved TSM</option>
+                        <option value="masc">MASC</option>
+                        <option value="sc">Super Charger</option>
+                        <option value="oc">Over Charger</option>
+                        <option value="hds">Hot Drop Shielding</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="select-weapon-upgrade">Weapon Upgrade:</label>
+                    <div class="controls">
+                      <select id="select-weapon-upgrade" class="input-large">
+                        <option value="">Select One</option>
+                        <optgroup label="Energy Weapons">
+                          <option value="ppc">PPC Capacitor</option>
+                          <option value="rfl">Refocused Laser</option>
+                        </optgroup>
+                        <optgroup label="Ballistic Weapons">
+                          <option value="fl">Flechette (FL)</option>
+                          <option value="ci">Cluster (CI)</option>
+                          <option value="ap">Armor Piercing (AP)</option>
+                          <option value="er">Extended Range (ER)</option>
+                          <option value="pr">Precision (Pr)</option>
+                          <option value="bb">Bunker Buster (BB)</option>
+                          <option value="df">Deforester</option>
+                        </optgroup>
+                        <optgroup label="Missile Weapons">
+                          <option value="sm">Smoke (SM)</option>
+                          <option value="st">Streak (ST)</option>
+                          <option value="fr">Fragmentation (FR)</option>
+                          <option value="sg">Semi-Guided (SG)</option>
+                          <option value="np">NARC Pod</option>
+                          <option value="ecmp">ECM Pod</option>
+                          <option value="hp">Haywire Pod</option>
+                          <option value="hmp">Homing Pod</option>
+                          <option value="flp">Flare Pod</option>
+                          <option value="vdj">Viral Decoy Jammer (VDJ) Pod</option>
+                        </optgroup>
+                        <optgroup label="Melee">
+                          <option value="vbr">Vibroblade</option>
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+          </div>
+          <div class="tab-pane" id="weapons">...</div>
+          <div class="tab-pane" id="extras">...</div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Create</button>
+            <button class="btn">Reset</button>
+          </div>
         </div>
-      </div>
-      <div class="span5">
-        <form class="form-horizontal">
-          <fieldset>
-            <legend>Create Mech</legend>
-            <div class="control-group">
-              <label class="control-label" for="select-faction">Faction</label>
-              <div class="controls">
-                <select id="select-faction" class="input-medium">
-                  <option value="inner-sphere">Inner Sphere</option>
-                  <option value="clan">Clan</option>
-                </select>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label" for="select-class">Class</label>
-              <div class="controls">
-                <select id="select-class" class="input-medium">
-                  <option value="light">Light</option>
-                  <option value="medium">Medium</option>
-                  <option value="heavy">Heavy</option>
-                  <option value="assault">Assault</option>
-                  <option value="clan">Clan</option>
-                </select>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label" for="select-chassis">Chassis</label>
-              <div class="controls">
-                <select id="select-chassis" class="input-medium">
-                  <option value="mech">Mech</option>
-                  <option value="quad">Quad Mech</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Create</button>
-              <button class="btn">Reset</button>
-            </div>
-          </fieldset>
-        </form>
       </div>
       <div class="span5">
         <fieldset>
