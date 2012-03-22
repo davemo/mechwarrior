@@ -34,7 +34,7 @@
         <ul class="nav nav-tabs">
           <li class="active"><a href="#basics" data-toggle="tab">Basics</a></li>
           <li><a href="#special-equipment" data-toggle="tab">Special Equipment</a></li>
-          <li><a href="#weapons" data-toggle="tab">Weapons</a></li>
+          <li><a href="#weapons" data-toggle="tab">Weapons &amp; Armor</a></li>
           <li><a href="#extras" data-toggle="tab">Extras</a></li>
         </ul>
 
@@ -233,8 +233,666 @@
                 </fieldset>
               </form>
           </div>
-          <div class="tab-pane" id="weapons">...</div>
-          <div class="tab-pane" id="extras">...</div>
+          <div class="tab-pane" id="weapons">
+            <form class="form-horizontal">
+               <fieldset>
+                 <div class="control-group">
+                   <label class="control-label" for="select-slot-1">Slot 1:</label>
+                   <div class="controls">
+                     <select id="select-slot-1" class="input-large">
+                       <option value="">Select One</option>
+                       <optgroup label="Energy Weapons">
+                         <option value="erll">ER Large Laser</option>
+                         <option value="erml">ER Medium Laser</option>
+                         <option value="ersl">ER Small Laser</option>
+                         <option value="hfl">Heavy Flamer</option>
+                         <option value="ll">Large Laser</option>
+                         <option value="ml">Medium Laser</option>
+                         <option value="sl">Small Laser</option>
+                         <option value="ppc">PPC</option>
+                         <option value="erppc">ER PPC</option>
+                         <option value="hppc">Heavy PPC</option>
+                         <option value="lerppc">Light ER PPC</option>
+                         <option value="snppc">Snub Nose PPC</option>
+                         <option value="pll">Pulse Laser (Large)</option>
+                         <option value="plm">Pulse Laser (Medium)</option>
+                         <option value="pls">Pulse Laser (Small)</option>
+                         <option value="xpll">X-Pulse Laser (Large)</option>
+                         <option value="xplm">X-Pulse Laser (Medium)</option>
+                         <option value="xpls">X-Pulse Laser (Small)</option>
+                       </optgroup>
+                       <optgroup label="Ballistic Weapons">
+                         <option value="ac2">AC/2</option>
+                         <option value="ac5">AC/5</option>
+                         <option value="ac10">AC/10</option>
+                         <option value="ac20">AC/20</option>
+                         <option value="hgr">Heavy Gauss Rifle</option>
+                         <option value="ihgr">Improved Heavy Gauss Rifle</option>
+                         <option value="gr">Gauss Rifle</option>
+                         <option value="lgr">Light Gauss Rifle</option>
+                         <option value="ms">Magshot</option>
+                         <option value="hvac2">High Velocity AC/2</option>
+                         <option value="hvac5">High Velocity AC/5</option>
+                         <option value="hvac10">High Velocity AC/10</option>
+                         <option value="hvac20">High Velocity AC/20</option>
+                         <option value="lb2xac">LB 2-X AC</option>
+                         <option value="lb5xac">LB 5-X AC</option>
+                         <option value="lb10xac">LB 10-X AC</option>
+                         <option value="lb20xac">LB 20-X AC</option>
+                         <option value="mg">MG</option>
+                         <option value="rac2">Rotary AC/2</option>
+                         <option value="rac5">Rotary AC/5</option>
+                         <option value="uac2">Ultra AC/2</option>
+                         <option value="uac5">Ultra AC/5</option>
+                         <option value="uac10">Ultra AC/10</option>
+                         <option value="uac20">Ultra AC/20</option>
+                       </optgroup>
+                       <optgroup label="Missile Weapons">
+                         <option value="lrm5">LRM 5</option>
+                         <option value="lrm10">LRM 10</option>
+                         <option value="lrm15">LRM 15</option>
+                         <option value="lrm20">LRM 20</option>
+                         <option value="elrm5">ELRM 5</option>
+                         <option value="elrm10">ELRM 10</option>
+                         <option value="elrm15">ELRM 15</option>
+                         <option value="elrm20">ELRM 20</option>
+                         <option value="tb5">Thunderbolt 5</option>
+                         <option value="tb10">Thunderbolt 10</option>
+                         <option value="tb15">Thunderbolt 15</option>
+                         <option value="tb20">Thunderbolt 20</option>
+                         <option value="mrm10">MRM 10</option>
+                         <option value="mrm20">MRM 20</option>
+                         <option value="mrm30">MRM 30</option>
+                         <option value="mrm40">MRM 40</option>
+                         <option value="srm2">SRM 2</option>
+                         <option value="srm4">SRM 4</option>
+                         <option value="srm6">SRM 6</option>
+                         <option value="narcl">NARC Launcher</option>
+                         <option value="inarcl">iNARC Launcher</option>
+                         <option value="aam">AAM</option>
+                         <option value="sam">SAM</option>
+                         <option value="glauncher">Grenade Launcher</option>
+                       </optgroup>
+                       <optgroup label="Armor">
+                        <option value="lra">Light Reflective Armor</option>
+                        <option value="hra">Heavy Reflective Armor</option>
+                        <option value="lrea">Light Reactive Armor</option>
+                        <option value="hrea">Heavy Reactive Armor</option>
+                        <option value="ffa">Ferro Fibrous Armor</option>
+                        <option value="ha">Hardened Armor</option>
+                        <option value="sa">Stealth Armor</option>
+                        <option value="ia">Impact Armor</option>
+                       </optgroup>
+                       <optgroup label="Melee">
+                         <option value="axe">Axe</option>
+                         <option value="hatchet">Hatchet</option>
+                         <option value="mace">Mace</option>
+                         <option value="club">Club</option>
+                         <option value="halberd">Halberd</option>
+                         <option value="polearm">Polearm</option>
+                         <option value="sword">Sword</option>
+                         <option value="harvester">Harvester</option>
+                         <option value="chainsaw">Chainsaw</option>
+                         <option value="flail">Flail</option>
+                         <option value="wball">Wrecking Ball</option>
+                         <option value="pincher">Pincher</option>
+                         <option value="wbucket">Work Bucket</option>
+                         <option value="claw">Claw</option>
+                         <option value="myomeridc">Myomer Interdiction Charges</option>
+                       </option>
+                     </select>
+                   </div>
+                 </div>
+                 <div class="control-group">
+                    <label class="control-label" for="select-slot-2">Slot 2:</label>
+                    <div class="controls">
+                      <select id="select-slot-2" class="input-large">
+                        <option value="">Select One</option>
+                        <optgroup label="Energy Weapons">
+                          <option value="erll">ER Large Laser</option>
+                          <option value="erml">ER Medium Laser</option>
+                          <option value="ersl">ER Small Laser</option>
+                          <option value="hfl">Heavy Flamer</option>
+                          <option value="ll">Large Laser</option>
+                          <option value="ml">Medium Laser</option>
+                          <option value="sl">Small Laser</option>
+                          <option value="ppc">PPC</option>
+                          <option value="erppc">ER PPC</option>
+                          <option value="hppc">Heavy PPC</option>
+                          <option value="lerppc">Light ER PPC</option>
+                          <option value="snppc">Snub Nose PPC</option>
+                          <option value="pll">Pulse Laser (Large)</option>
+                          <option value="plm">Pulse Laser (Medium)</option>
+                          <option value="pls">Pulse Laser (Small)</option>
+                          <option value="xpll">X-Pulse Laser (Large)</option>
+                          <option value="xplm">X-Pulse Laser (Medium)</option>
+                          <option value="xpls">X-Pulse Laser (Small)</option>
+                        </optgroup>
+                        <optgroup label="Ballistic Weapons">
+                          <option value="ac2">AC/2</option>
+                          <option value="ac5">AC/5</option>
+                          <option value="ac10">AC/10</option>
+                          <option value="ac20">AC/20</option>
+                          <option value="hgr">Heavy Gauss Rifle</option>
+                          <option value="ihgr">Improved Heavy Gauss Rifle</option>
+                          <option value="gr">Gauss Rifle</option>
+                          <option value="lgr">Light Gauss Rifle</option>
+                          <option value="ms">Magshot</option>
+                          <option value="hvac2">High Velocity AC/2</option>
+                          <option value="hvac5">High Velocity AC/5</option>
+                          <option value="hvac10">High Velocity AC/10</option>
+                          <option value="hvac20">High Velocity AC/20</option>
+                          <option value="lb2xac">LB 2-X AC</option>
+                          <option value="lb5xac">LB 5-X AC</option>
+                          <option value="lb10xac">LB 10-X AC</option>
+                          <option value="lb20xac">LB 20-X AC</option>
+                          <option value="mg">MG</option>
+                          <option value="rac2">Rotary AC/2</option>
+                          <option value="rac5">Rotary AC/5</option>
+                          <option value="uac2">Ultra AC/2</option>
+                          <option value="uac5">Ultra AC/5</option>
+                          <option value="uac10">Ultra AC/10</option>
+                          <option value="uac20">Ultra AC/20</option>
+                        </optgroup>
+                        <optgroup label="Missile Weapons">
+                          <option value="lrm5">LRM 5</option>
+                          <option value="lrm10">LRM 10</option>
+                          <option value="lrm15">LRM 15</option>
+                          <option value="lrm20">LRM 20</option>
+                          <option value="elrm5">ELRM 5</option>
+                          <option value="elrm10">ELRM 10</option>
+                          <option value="elrm15">ELRM 15</option>
+                          <option value="elrm20">ELRM 20</option>
+                          <option value="tb5">Thunderbolt 5</option>
+                          <option value="tb10">Thunderbolt 10</option>
+                          <option value="tb15">Thunderbolt 15</option>
+                          <option value="tb20">Thunderbolt 20</option>
+                          <option value="mrm10">MRM 10</option>
+                          <option value="mrm20">MRM 20</option>
+                          <option value="mrm30">MRM 30</option>
+                          <option value="mrm40">MRM 40</option>
+                          <option value="srm2">SRM 2</option>
+                          <option value="srm4">SRM 4</option>
+                          <option value="srm6">SRM 6</option>
+                          <option value="narcl">NARC Launcher</option>
+                          <option value="inarcl">iNARC Launcher</option>
+                          <option value="aam">AAM</option>
+                          <option value="sam">SAM</option>
+                          <option value="glauncher">Grenade Launcher</option>
+                        </optgroup>
+                        <optgroup label="Armor">
+                         <option value="lra">Light Reflective Armor</option>
+                         <option value="hra">Heavy Reflective Armor</option>
+                         <option value="lrea">Light Reactive Armor</option>
+                         <option value="hrea">Heavy Reactive Armor</option>
+                         <option value="ffa">Ferro Fibrous Armor</option>
+                         <option value="ha">Hardened Armor</option>
+                         <option value="sa">Stealth Armor</option>
+                         <option value="ia">Impact Armor</option>
+                        </optgroup>
+                        <optgroup label="Melee">
+                          <option value="axe">Axe</option>
+                          <option value="hatchet">Hatchet</option>
+                          <option value="mace">Mace</option>
+                          <option value="club">Club</option>
+                          <option value="halberd">Halberd</option>
+                          <option value="polearm">Polearm</option>
+                          <option value="sword">Sword</option>
+                          <option value="harvester">Harvester</option>
+                          <option value="chainsaw">Chainsaw</option>
+                          <option value="flail">Flail</option>
+                          <option value="wball">Wrecking Ball</option>
+                          <option value="pincher">Pincher</option>
+                          <option value="wbucket">Work Bucket</option>
+                          <option value="claw">Claw</option>
+                          <option value="myomeridc">Myomer Interdiction Charges</option>
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                     <label class="control-label" for="select-slot-3">Slot 3:</label>
+                     <div class="controls">
+                       <select id="select-slot-3" class="input-large">
+                         <option value="">Select One</option>
+                         <optgroup label="Energy Weapons">
+                           <option value="erll">ER Large Laser</option>
+                           <option value="erml">ER Medium Laser</option>
+                           <option value="ersl">ER Small Laser</option>
+                           <option value="hfl">Heavy Flamer</option>
+                           <option value="ll">Large Laser</option>
+                           <option value="ml">Medium Laser</option>
+                           <option value="sl">Small Laser</option>
+                           <option value="ppc">PPC</option>
+                           <option value="erppc">ER PPC</option>
+                           <option value="hppc">Heavy PPC</option>
+                           <option value="lerppc">Light ER PPC</option>
+                           <option value="snppc">Snub Nose PPC</option>
+                           <option value="pll">Pulse Laser (Large)</option>
+                           <option value="plm">Pulse Laser (Medium)</option>
+                           <option value="pls">Pulse Laser (Small)</option>
+                           <option value="xpll">X-Pulse Laser (Large)</option>
+                           <option value="xplm">X-Pulse Laser (Medium)</option>
+                           <option value="xpls">X-Pulse Laser (Small)</option>
+                         </optgroup>
+                         <optgroup label="Ballistic Weapons">
+                           <option value="ac2">AC/2</option>
+                           <option value="ac5">AC/5</option>
+                           <option value="ac10">AC/10</option>
+                           <option value="ac20">AC/20</option>
+                           <option value="hgr">Heavy Gauss Rifle</option>
+                           <option value="ihgr">Improved Heavy Gauss Rifle</option>
+                           <option value="gr">Gauss Rifle</option>
+                           <option value="lgr">Light Gauss Rifle</option>
+                           <option value="ms">Magshot</option>
+                           <option value="hvac2">High Velocity AC/2</option>
+                           <option value="hvac5">High Velocity AC/5</option>
+                           <option value="hvac10">High Velocity AC/10</option>
+                           <option value="hvac20">High Velocity AC/20</option>
+                           <option value="lb2xac">LB 2-X AC</option>
+                           <option value="lb5xac">LB 5-X AC</option>
+                           <option value="lb10xac">LB 10-X AC</option>
+                           <option value="lb20xac">LB 20-X AC</option>
+                           <option value="mg">MG</option>
+                           <option value="rac2">Rotary AC/2</option>
+                           <option value="rac5">Rotary AC/5</option>
+                           <option value="uac2">Ultra AC/2</option>
+                           <option value="uac5">Ultra AC/5</option>
+                           <option value="uac10">Ultra AC/10</option>
+                           <option value="uac20">Ultra AC/20</option>
+                         </optgroup>
+                         <optgroup label="Missile Weapons">
+                           <option value="lrm5">LRM 5</option>
+                           <option value="lrm10">LRM 10</option>
+                           <option value="lrm15">LRM 15</option>
+                           <option value="lrm20">LRM 20</option>
+                           <option value="elrm5">ELRM 5</option>
+                           <option value="elrm10">ELRM 10</option>
+                           <option value="elrm15">ELRM 15</option>
+                           <option value="elrm20">ELRM 20</option>
+                           <option value="tb5">Thunderbolt 5</option>
+                           <option value="tb10">Thunderbolt 10</option>
+                           <option value="tb15">Thunderbolt 15</option>
+                           <option value="tb20">Thunderbolt 20</option>
+                           <option value="mrm10">MRM 10</option>
+                           <option value="mrm20">MRM 20</option>
+                           <option value="mrm30">MRM 30</option>
+                           <option value="mrm40">MRM 40</option>
+                           <option value="srm2">SRM 2</option>
+                           <option value="srm4">SRM 4</option>
+                           <option value="srm6">SRM 6</option>
+                           <option value="narcl">NARC Launcher</option>
+                           <option value="inarcl">iNARC Launcher</option>
+                           <option value="aam">AAM</option>
+                           <option value="sam">SAM</option>
+                           <option value="glauncher">Grenade Launcher</option>
+                         </optgroup>
+                         <optgroup label="Armor">
+                          <option value="lra">Light Reflective Armor</option>
+                          <option value="hra">Heavy Reflective Armor</option>
+                          <option value="lrea">Light Reactive Armor</option>
+                          <option value="hrea">Heavy Reactive Armor</option>
+                          <option value="ffa">Ferro Fibrous Armor</option>
+                          <option value="ha">Hardened Armor</option>
+                          <option value="sa">Stealth Armor</option>
+                          <option value="ia">Impact Armor</option>
+                         </optgroup>
+                         <optgroup label="Melee">
+                           <option value="axe">Axe</option>
+                           <option value="hatchet">Hatchet</option>
+                           <option value="mace">Mace</option>
+                           <option value="club">Club</option>
+                           <option value="halberd">Halberd</option>
+                           <option value="polearm">Polearm</option>
+                           <option value="sword">Sword</option>
+                           <option value="harvester">Harvester</option>
+                           <option value="chainsaw">Chainsaw</option>
+                           <option value="flail">Flail</option>
+                           <option value="wball">Wrecking Ball</option>
+                           <option value="pincher">Pincher</option>
+                           <option value="wbucket">Work Bucket</option>
+                           <option value="claw">Claw</option>
+                           <option value="myomeridc">Myomer Interdiction Charges</option>
+                         </option>
+                       </select>
+                     </div>
+                   </div>
+                   <div class="control-group">
+                      <label class="control-label" for="select-slot-4">Slot 4:</label>
+                      <div class="controls">
+                        <select id="select-slot-4" class="input-large">
+                          <option value="">Select One</option>
+                          <optgroup label="Energy Weapons">
+                            <option value="erll">ER Large Laser</option>
+                            <option value="erml">ER Medium Laser</option>
+                            <option value="ersl">ER Small Laser</option>
+                            <option value="hfl">Heavy Flamer</option>
+                            <option value="ll">Large Laser</option>
+                            <option value="ml">Medium Laser</option>
+                            <option value="sl">Small Laser</option>
+                            <option value="ppc">PPC</option>
+                            <option value="erppc">ER PPC</option>
+                            <option value="hppc">Heavy PPC</option>
+                            <option value="lerppc">Light ER PPC</option>
+                            <option value="snppc">Snub Nose PPC</option>
+                            <option value="pll">Pulse Laser (Large)</option>
+                            <option value="plm">Pulse Laser (Medium)</option>
+                            <option value="pls">Pulse Laser (Small)</option>
+                            <option value="xpll">X-Pulse Laser (Large)</option>
+                            <option value="xplm">X-Pulse Laser (Medium)</option>
+                            <option value="xpls">X-Pulse Laser (Small)</option>
+                          </optgroup>
+                          <optgroup label="Ballistic Weapons">
+                            <option value="ac2">AC/2</option>
+                            <option value="ac5">AC/5</option>
+                            <option value="ac10">AC/10</option>
+                            <option value="ac20">AC/20</option>
+                            <option value="hgr">Heavy Gauss Rifle</option>
+                            <option value="ihgr">Improved Heavy Gauss Rifle</option>
+                            <option value="gr">Gauss Rifle</option>
+                            <option value="lgr">Light Gauss Rifle</option>
+                            <option value="ms">Magshot</option>
+                            <option value="hvac2">High Velocity AC/2</option>
+                            <option value="hvac5">High Velocity AC/5</option>
+                            <option value="hvac10">High Velocity AC/10</option>
+                            <option value="hvac20">High Velocity AC/20</option>
+                            <option value="lb2xac">LB 2-X AC</option>
+                            <option value="lb5xac">LB 5-X AC</option>
+                            <option value="lb10xac">LB 10-X AC</option>
+                            <option value="lb20xac">LB 20-X AC</option>
+                            <option value="mg">MG</option>
+                            <option value="rac2">Rotary AC/2</option>
+                            <option value="rac5">Rotary AC/5</option>
+                            <option value="uac2">Ultra AC/2</option>
+                            <option value="uac5">Ultra AC/5</option>
+                            <option value="uac10">Ultra AC/10</option>
+                            <option value="uac20">Ultra AC/20</option>
+                          </optgroup>
+                          <optgroup label="Missile Weapons">
+                            <option value="lrm5">LRM 5</option>
+                            <option value="lrm10">LRM 10</option>
+                            <option value="lrm15">LRM 15</option>
+                            <option value="lrm20">LRM 20</option>
+                            <option value="elrm5">ELRM 5</option>
+                            <option value="elrm10">ELRM 10</option>
+                            <option value="elrm15">ELRM 15</option>
+                            <option value="elrm20">ELRM 20</option>
+                            <option value="tb5">Thunderbolt 5</option>
+                            <option value="tb10">Thunderbolt 10</option>
+                            <option value="tb15">Thunderbolt 15</option>
+                            <option value="tb20">Thunderbolt 20</option>
+                            <option value="mrm10">MRM 10</option>
+                            <option value="mrm20">MRM 20</option>
+                            <option value="mrm30">MRM 30</option>
+                            <option value="mrm40">MRM 40</option>
+                            <option value="srm2">SRM 2</option>
+                            <option value="srm4">SRM 4</option>
+                            <option value="srm6">SRM 6</option>
+                            <option value="narcl">NARC Launcher</option>
+                            <option value="inarcl">iNARC Launcher</option>
+                            <option value="aam">AAM</option>
+                            <option value="sam">SAM</option>
+                            <option value="glauncher">Grenade Launcher</option>
+                          </optgroup>
+                          <optgroup label="Armor">
+                           <option value="lra">Light Reflective Armor</option>
+                           <option value="hra">Heavy Reflective Armor</option>
+                           <option value="lrea">Light Reactive Armor</option>
+                           <option value="hrea">Heavy Reactive Armor</option>
+                           <option value="ffa">Ferro Fibrous Armor</option>
+                           <option value="ha">Hardened Armor</option>
+                           <option value="sa">Stealth Armor</option>
+                           <option value="ia">Impact Armor</option>
+                          </optgroup>
+                          <optgroup label="Melee">
+                            <option value="axe">Axe</option>
+                            <option value="hatchet">Hatchet</option>
+                            <option value="mace">Mace</option>
+                            <option value="club">Club</option>
+                            <option value="halberd">Halberd</option>
+                            <option value="polearm">Polearm</option>
+                            <option value="sword">Sword</option>
+                            <option value="harvester">Harvester</option>
+                            <option value="chainsaw">Chainsaw</option>
+                            <option value="flail">Flail</option>
+                            <option value="wball">Wrecking Ball</option>
+                            <option value="pincher">Pincher</option>
+                            <option value="wbucket">Work Bucket</option>
+                            <option value="claw">Claw</option>
+                            <option value="myomeridc">Myomer Interdiction Charges</option>
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                       <label class="control-label" for="select-slot-5">Slot 5:</label>
+                       <div class="controls">
+                         <select id="select-slot-5" class="input-large">
+                           <option value="">Select One</option>
+                           <optgroup label="Energy Weapons">
+                             <option value="erll">ER Large Laser</option>
+                             <option value="erml">ER Medium Laser</option>
+                             <option value="ersl">ER Small Laser</option>
+                             <option value="hfl">Heavy Flamer</option>
+                             <option value="ll">Large Laser</option>
+                             <option value="ml">Medium Laser</option>
+                             <option value="sl">Small Laser</option>
+                             <option value="ppc">PPC</option>
+                             <option value="erppc">ER PPC</option>
+                             <option value="hppc">Heavy PPC</option>
+                             <option value="lerppc">Light ER PPC</option>
+                             <option value="snppc">Snub Nose PPC</option>
+                             <option value="pll">Pulse Laser (Large)</option>
+                             <option value="plm">Pulse Laser (Medium)</option>
+                             <option value="pls">Pulse Laser (Small)</option>
+                             <option value="xpll">X-Pulse Laser (Large)</option>
+                             <option value="xplm">X-Pulse Laser (Medium)</option>
+                             <option value="xpls">X-Pulse Laser (Small)</option>
+                           </optgroup>
+                           <optgroup label="Ballistic Weapons">
+                             <option value="ac2">AC/2</option>
+                             <option value="ac5">AC/5</option>
+                             <option value="ac10">AC/10</option>
+                             <option value="ac20">AC/20</option>
+                             <option value="hgr">Heavy Gauss Rifle</option>
+                             <option value="ihgr">Improved Heavy Gauss Rifle</option>
+                             <option value="gr">Gauss Rifle</option>
+                             <option value="lgr">Light Gauss Rifle</option>
+                             <option value="ms">Magshot</option>
+                             <option value="hvac2">High Velocity AC/2</option>
+                             <option value="hvac5">High Velocity AC/5</option>
+                             <option value="hvac10">High Velocity AC/10</option>
+                             <option value="hvac20">High Velocity AC/20</option>
+                             <option value="lb2xac">LB 2-X AC</option>
+                             <option value="lb5xac">LB 5-X AC</option>
+                             <option value="lb10xac">LB 10-X AC</option>
+                             <option value="lb20xac">LB 20-X AC</option>
+                             <option value="mg">MG</option>
+                             <option value="rac2">Rotary AC/2</option>
+                             <option value="rac5">Rotary AC/5</option>
+                             <option value="uac2">Ultra AC/2</option>
+                             <option value="uac5">Ultra AC/5</option>
+                             <option value="uac10">Ultra AC/10</option>
+                             <option value="uac20">Ultra AC/20</option>
+                           </optgroup>
+                           <optgroup label="Missile Weapons">
+                             <option value="lrm5">LRM 5</option>
+                             <option value="lrm10">LRM 10</option>
+                             <option value="lrm15">LRM 15</option>
+                             <option value="lrm20">LRM 20</option>
+                             <option value="elrm5">ELRM 5</option>
+                             <option value="elrm10">ELRM 10</option>
+                             <option value="elrm15">ELRM 15</option>
+                             <option value="elrm20">ELRM 20</option>
+                             <option value="tb5">Thunderbolt 5</option>
+                             <option value="tb10">Thunderbolt 10</option>
+                             <option value="tb15">Thunderbolt 15</option>
+                             <option value="tb20">Thunderbolt 20</option>
+                             <option value="mrm10">MRM 10</option>
+                             <option value="mrm20">MRM 20</option>
+                             <option value="mrm30">MRM 30</option>
+                             <option value="mrm40">MRM 40</option>
+                             <option value="srm2">SRM 2</option>
+                             <option value="srm4">SRM 4</option>
+                             <option value="srm6">SRM 6</option>
+                             <option value="narcl">NARC Launcher</option>
+                             <option value="inarcl">iNARC Launcher</option>
+                             <option value="aam">AAM</option>
+                             <option value="sam">SAM</option>
+                             <option value="glauncher">Grenade Launcher</option>
+                           </optgroup>
+                           <optgroup label="Armor">
+                            <option value="lra">Light Reflective Armor</option>
+                            <option value="hra">Heavy Reflective Armor</option>
+                            <option value="lrea">Light Reactive Armor</option>
+                            <option value="hrea">Heavy Reactive Armor</option>
+                            <option value="ffa">Ferro Fibrous Armor</option>
+                            <option value="ha">Hardened Armor</option>
+                            <option value="sa">Stealth Armor</option>
+                            <option value="ia">Impact Armor</option>
+                           </optgroup>
+                           <optgroup label="Melee">
+                             <option value="axe">Axe</option>
+                             <option value="hatchet">Hatchet</option>
+                             <option value="mace">Mace</option>
+                             <option value="club">Club</option>
+                             <option value="halberd">Halberd</option>
+                             <option value="polearm">Polearm</option>
+                             <option value="sword">Sword</option>
+                             <option value="harvester">Harvester</option>
+                             <option value="chainsaw">Chainsaw</option>
+                             <option value="flail">Flail</option>
+                             <option value="wball">Wrecking Ball</option>
+                             <option value="pincher">Pincher</option>
+                             <option value="wbucket">Work Bucket</option>
+                             <option value="claw">Claw</option>
+                             <option value="myomeridc">Myomer Interdiction Charges</option>
+                           </option>
+                         </select>
+                       </div>
+                     </div>
+                     <div class="control-group">
+                        <label class="control-label" for="select-slot-6">Slot 6:</label>
+                        <div class="controls">
+                          <select id="select-slot-6" class="input-large">
+                            <option value="">Select One</option>
+                            <optgroup label="Energy Weapons">
+                              <option value="erll">ER Large Laser</option>
+                              <option value="erml">ER Medium Laser</option>
+                              <option value="ersl">ER Small Laser</option>
+                              <option value="hfl">Heavy Flamer</option>
+                              <option value="ll">Large Laser</option>
+                              <option value="ml">Medium Laser</option>
+                              <option value="sl">Small Laser</option>
+                              <option value="ppc">PPC</option>
+                              <option value="erppc">ER PPC</option>
+                              <option value="hppc">Heavy PPC</option>
+                              <option value="lerppc">Light ER PPC</option>
+                              <option value="snppc">Snub Nose PPC</option>
+                              <option value="pll">Pulse Laser (Large)</option>
+                              <option value="plm">Pulse Laser (Medium)</option>
+                              <option value="pls">Pulse Laser (Small)</option>
+                              <option value="xpll">X-Pulse Laser (Large)</option>
+                              <option value="xplm">X-Pulse Laser (Medium)</option>
+                              <option value="xpls">X-Pulse Laser (Small)</option>
+                            </optgroup>
+                            <optgroup label="Ballistic Weapons">
+                              <option value="ac2">AC/2</option>
+                              <option value="ac5">AC/5</option>
+                              <option value="ac10">AC/10</option>
+                              <option value="ac20">AC/20</option>
+                              <option value="hgr">Heavy Gauss Rifle</option>
+                              <option value="ihgr">Improved Heavy Gauss Rifle</option>
+                              <option value="gr">Gauss Rifle</option>
+                              <option value="lgr">Light Gauss Rifle</option>
+                              <option value="ms">Magshot</option>
+                              <option value="hvac2">High Velocity AC/2</option>
+                              <option value="hvac5">High Velocity AC/5</option>
+                              <option value="hvac10">High Velocity AC/10</option>
+                              <option value="hvac20">High Velocity AC/20</option>
+                              <option value="lb2xac">LB 2-X AC</option>
+                              <option value="lb5xac">LB 5-X AC</option>
+                              <option value="lb10xac">LB 10-X AC</option>
+                              <option value="lb20xac">LB 20-X AC</option>
+                              <option value="mg">MG</option>
+                              <option value="rac2">Rotary AC/2</option>
+                              <option value="rac5">Rotary AC/5</option>
+                              <option value="uac2">Ultra AC/2</option>
+                              <option value="uac5">Ultra AC/5</option>
+                              <option value="uac10">Ultra AC/10</option>
+                              <option value="uac20">Ultra AC/20</option>
+                            </optgroup>
+                            <optgroup label="Missile Weapons">
+                              <option value="lrm5">LRM 5</option>
+                              <option value="lrm10">LRM 10</option>
+                              <option value="lrm15">LRM 15</option>
+                              <option value="lrm20">LRM 20</option>
+                              <option value="elrm5">ELRM 5</option>
+                              <option value="elrm10">ELRM 10</option>
+                              <option value="elrm15">ELRM 15</option>
+                              <option value="elrm20">ELRM 20</option>
+                              <option value="tb5">Thunderbolt 5</option>
+                              <option value="tb10">Thunderbolt 10</option>
+                              <option value="tb15">Thunderbolt 15</option>
+                              <option value="tb20">Thunderbolt 20</option>
+                              <option value="mrm10">MRM 10</option>
+                              <option value="mrm20">MRM 20</option>
+                              <option value="mrm30">MRM 30</option>
+                              <option value="mrm40">MRM 40</option>
+                              <option value="srm2">SRM 2</option>
+                              <option value="srm4">SRM 4</option>
+                              <option value="srm6">SRM 6</option>
+                              <option value="narcl">NARC Launcher</option>
+                              <option value="inarcl">iNARC Launcher</option>
+                              <option value="aam">AAM</option>
+                              <option value="sam">SAM</option>
+                              <option value="glauncher">Grenade Launcher</option>
+                            </optgroup>
+                            <optgroup label="Armor">
+                             <option value="lra">Light Reflective Armor</option>
+                             <option value="hra">Heavy Reflective Armor</option>
+                             <option value="lrea">Light Reactive Armor</option>
+                             <option value="hrea">Heavy Reactive Armor</option>
+                             <option value="ffa">Ferro Fibrous Armor</option>
+                             <option value="ha">Hardened Armor</option>
+                             <option value="sa">Stealth Armor</option>
+                             <option value="ia">Impact Armor</option>
+                            </optgroup>
+                            <optgroup label="Melee">
+                              <option value="axe">Axe</option>
+                              <option value="hatchet">Hatchet</option>
+                              <option value="mace">Mace</option>
+                              <option value="club">Club</option>
+                              <option value="halberd">Halberd</option>
+                              <option value="polearm">Polearm</option>
+                              <option value="sword">Sword</option>
+                              <option value="harvester">Harvester</option>
+                              <option value="chainsaw">Chainsaw</option>
+                              <option value="flail">Flail</option>
+                              <option value="wball">Wrecking Ball</option>
+                              <option value="pincher">Pincher</option>
+                              <option value="wbucket">Work Bucket</option>
+                              <option value="claw">Claw</option>
+                              <option value="myomeridc">Myomer Interdiction Charges</option>
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+               </fieldset>
+             </form>
+          </div>
+          <div class="tab-pane" id="extras">
+            <form class="form-horizontal">
+              <fieldset>
+                <div class="control-group">
+                  <label class="control-label" for="input-additional-armor">Additional Armor Points:</label>
+                  <div class="controls">
+                    <input id="input-additional-armor" type="text" class="input-small" />
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
           <div class="form-actions">
             <button type="submit" class="btn btn-primary">Create</button>
             <button class="btn">Reset</button>
